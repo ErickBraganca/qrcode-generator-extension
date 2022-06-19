@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+    <div class="view-container">
+        <div class="main-content">
+            <header class="header-container">
+                <h1>Gerador de QR Code</h1>
+            </header>
+            <div class="main-container"  id="app" >
+                <img src="./popup.png" class="icon">
+                <!--The QRCode will be rendered-->
+            </div>
+            <main class="action-container">
+                <section class="data-container">
+                    <fieldset class="field-group">
+                        <label for="type">Tipo de Dado:</label>
+                        <select id="type" class="type">
+                            <option value="link">Link</option>
+                            <option value="text">Texto</option>
+                            <option value="coordinates">Coordenadas</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="field-group">
+                        <label for="size">Tamanho da Imagem:</label>
+                        <select id="size">
+                            <option value="50">50px</option>
+                            <option value="100">100px</option>
+                            <option value="150">150px</option>
+                            <option value="200">200px</option>
+                            <option value="250">250px</option>
+                            <option value="300">300px</option>
+                            <option value="350">350px</option>
+                            <option value="400">400px</option>
+                            <option value="400">450px</option>
+                            <option value="400">500px</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="field-group">
+                        <label for="data">Informação:</label>
+                        <textarea class="input-data" id="data" cols="30" rows="5"></textarea>
+                    </fieldset>
+                </section>
+                <section class="button-container">
+                    <button type="button" id="add" class="add"><i class="fas fa-sign-out-alt"></i></button>
+                    <button type="button" id="delet" class="clean"><i class="fas fa-window-close"></i></button>
+                    <button type="button" id="clean" class="delete"><i class="fas fa-trash"></i></button>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

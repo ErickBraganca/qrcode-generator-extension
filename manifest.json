@@ -1,0 +1,24 @@
+{
+    "name": "Gerador de QRCODE",
+    "description": "Esta extensão transforma textos um QRCODE.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_title": "Gerador de QRCODE",
+        "default_icon": "/interface/popup.png",
+        "default_popup": "/interface/popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "icons": {
+        "16": "/interface/icons/qrcode_icon16.png",
+        "32": "/interface/icons/qrcode_icon32.png",
+        "48": "/interface/icons/qrcode_icon48.png",
+        "96": "/interface/icons/qrcode_icon96.png",
+        "128": "/interface/icons/qrcode_icon128.png"
+    }
+}
