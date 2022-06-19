@@ -2,7 +2,7 @@
 
 <div style="margin: 10px 0 2px 0" class="preview-container">
   <h3 style="margin: 0px">💻 Application Preview</h3>
-  <img style="height:300px; border-radius: 10px;" src=""></img>
+  <img style="height:500px; border-radius: 10px;" src="https://github.com/ErickBraganca/qrcode-generator-extension/blob/0c4366338943c6f91372d356a2de25add9d8a988/docs/Preview.png"></img>
 </div>
 
 ## 📜 Motivation
