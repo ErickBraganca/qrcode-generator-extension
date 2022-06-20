@@ -1,6 +1,6 @@
 /*---- Background Script ----*/
 
-//Listen event to initialize the extension on installation.
+//Listening to the extension startup event.
 chrome.runtime.onInstalled.addListener(() => {
   console.log("onBackground....Installed")
 })
@@ -10,7 +10,7 @@ chrome.runtime.onMessage.addListener((request, requester, response) => {
   if ((request.from === 'popup') && (request.subject === 'generate')) {
     console.log("onBackground....Receiving")
 
-    //Passing response as a callback of requestQRCode function
+    //Passing response as a callback of requestQRCode function.
     const inputs = request.payload
     requestQRCode(inputs, response)
   }
@@ -21,7 +21,7 @@ chrome.runtime.onMessage.addListener((request, requester, response) => {
 async function requestQRCode(inputs, callback) {
   const { type, size, content } = inputs
 
-  //Check if the chosen size is larger than the image container in UI
+  //Check if the chosen size is larger than the image container in UI.
   const isBigger = Number(size) > 150 ? true : false
 
   //Google chart API parameters
@@ -41,5 +41,6 @@ async function requestQRCode(inputs, callback) {
     adjust: isBigger
   }
 
+  //Executing response of onMessage as a callback.
   callback(qrcode)
 }

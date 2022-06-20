@@ -26,7 +26,7 @@ btnAdd.addEventListener('click', function () {
     payload: data,
 
   }, function (response) {
-    //Receiving menssage fron background script
+    //Receiving menssage from background script
     renderImage(response)
   })
 })
