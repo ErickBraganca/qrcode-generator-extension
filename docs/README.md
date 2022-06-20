@@ -16,12 +16,25 @@
 <span style="margin-botton: 5px">
   This is a browser extension created to transform, text, links and geografic coordinates in QR Codes.
   <br>
-  Its functionality is based on the google chart API. For each button click, an HTTP call is made to the google API that returns the QRcode.
+  Its functionality is based on the google chart API. For each button click, an HTTP call is made to the google API that returns the QR Code.
   <br>
   In the case of the coordinate, a place link is created to redirect to the Google Maps app.
+  <br>
   Reference: https://developers.google.com/chart
 </span>
 
+## 🥽 Installation and Use
+<span style="margin-botton: 5px">
+  Because it is an uncompressed extension, to install and use, you need to enable the developer mode.
+  <br>
+  The below process is similar in other browsers, like Microsoft Edge, Mozilla Firefox... 
+  <ol>
+    <li>Goto Chrome Settings using three dots on the top right corner.</li>
+    <li>Then Select Extensions.</li>
+    <li>Enable Developer Mode.</li>
+    <li>Click on Load Unpacked and select this project folder.</li>
+  </ol>
+</span>
 
 ## 🔩 Extension Structure
 
