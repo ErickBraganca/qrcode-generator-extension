@@ -37,7 +37,6 @@
 </span>
 
 ## 🔩 Extension Structure
-
   ```
 📂qrcode-generator-extension
 │
